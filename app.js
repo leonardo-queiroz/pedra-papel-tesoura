@@ -136,7 +136,7 @@ function removePoint() {
 function playRound(playerSelection, computerSelection) {
     removePoint();
     if (playerSelection === "rock") {    
-        playerImage.setAttribute("src", "./assets/imagens/CPU-Pedra.png");
+        playerImage.setAttribute("src", "./assets/imagens/Player-Pedra.png");
         playerImage.setAttribute("alt", "Você escolheu Pedra");
         playerImage.classList.remove("img-animation");
         void playerImage.offsetWidth;
@@ -156,7 +156,7 @@ function playRound(playerSelection, computerSelection) {
         }
 
     } else if (playerSelection === "paper") {
-        playerImage.setAttribute("src", "./assets/imagens/CPU-Papel.png");
+        playerImage.setAttribute("src", "./assets/imagens/Player-Papel.png");
         playerImage.setAttribute("alt", "Você escolheu Papel");
         playerImage.classList.remove("img-animation");
         void playerImage.offsetWidth;
@@ -176,7 +176,7 @@ function playRound(playerSelection, computerSelection) {
         }
 
     } else if (playerSelection === "scissors") {
-        playerImage.setAttribute("src", "./assets/imagens/CPU-Tesoura.png");
+        playerImage.setAttribute("src", "./assets/imagens/Player-Tesoura.png");
         playerImage.setAttribute("alt", "Você escolheu Tesoura");
         playerImage.classList.remove("img-animation");
         void playerImage.offsetWidth;
@@ -197,12 +197,12 @@ function playRound(playerSelection, computerSelection) {
     }
 
     if (winCount === 5) {        
-        finalResults.textContent = "*** VOCÊ VENCEU! ***";        
+        finalResults.textContent = "*** VOCE VENCEU! ***";        
         finalResults.classList.remove("hidden");
         finalResults.classList.add("results-animation");
         finishGame();   
     } else if (lossCount === 5) {        
-        finalResults.textContent = "XxX VOCÊ PERDEU! XxX";       
+        finalResults.textContent = "XxX VOCE PERDEU! XxX";       
         finalResults.classList.remove("hidden");
         finalResults.classList.add("results-animation");
         finishGame();
