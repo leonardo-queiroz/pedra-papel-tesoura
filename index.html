@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Pedra, Papel e Tesoura!</title>
+</head>
+
+<body>
+    <header id="intro">
+        <h1>PEDRA, PAPEL, TESOURA!!</h1>
+        <div id="header-buttons">            
+            <button class="side-buttons" id="instructions-toggle">COMO JOGAR</button>
+            <div class="hidden" id="instructions">
+                <p>- O PRIMEIRO A CONSEGUIR 5 PONTOS, VENCE O JOGO</p>
+                <p>- APERTE O BOTAO RESET SE DESEJAR REINICIAR</p>  
+                <div id="tutorial-box">
+                    <div class="tutorial">
+                        <p>&nbsp&nbspPEDRA</p>
+                        <img class="tutorial-image" src="./assets/imagens/Player-Pedra.png" alt="Uma mão simbolizando pedra">
+                        <p>GANHA DE</p>
+                        <img class="tutorial-image" src="./assets/imagens/CPU-Tesoura.png" alt="Uma mão simbolizando tesoura">                
+                        <p>TESOURA</p>
+                    </div>
+                    <div class="tutorial">
+                        <p>PAPEL</p>
+                        <img class="tutorial-image" src="./assets/imagens/Player-Papel.png" alt="Uma mão simbolizando papel">
+                        <p>GANHA DE</p>
+                        <img class="tutorial-image" src="./assets/imagens/CPU-Pedra.png" alt="Uma mão simbolizando pedra">                          
+                        <p>PEDRA</p>
+                    </div>
+                    <div class="tutorial">
+                        <p>TESOURA</p>
+                        <img class="tutorial-image" src="./assets/imagens/Player-Tesoura.png" alt="Uma mão simbolizando tesoura">
+                        <p>GANHA DE</p>
+                        <img class="tutorial-image" src="./assets/imagens/CPU-Papel.png" alt="Uma mão simbolizando papel">                          
+                        <p>PAPEL&nbsp&nbsp</p>
+                    </div>
+                </div>                   
+            </div>
+            <button class="side-buttons" id="reset-button">RESET</button>        
+        </div> 
+    </header>
+    
+    <div id="board">
+        <h2 class="vertical-text">JOGADOR</h2>
+        <div class="game-sides" id="player-side">
+            <div id="player-selection">
+                <img class="player-hand" id="rock" src="./assets/imagens/Select-Pedra.png" alt="Uma mão simbolizando pedra">
+                <img class="player-hand" id="paper" src="./assets/imagens/Select-Papel.png" alt="Uma mão simbolizando papel">
+                <img class="player-hand" id="scissors" src="./assets/imagens/Select-Tesoura.png" alt="Uma mão simbolizando tesoura">
+            </div>
+            <div class="points-area" id="player-points"></div>
+            <img class="selected-img" id="player-img" src="" alt="">            
+        </div>
+        
+        <div class="game-sides" id="computer-side">            
+            <img class="selected-img" id="computer-img" src="" alt="">          
+            <div class="points-area" id="computer-points"></div>
+            <div id="cpu-selection"></div>
+        </div>
+        <h2 class="vertical-text">COMPUTADOR</h2>
+    </div>
+    
+    <div id="score">
+        <div class="score-points">
+            <p>JOGADOR</p>
+            <p class="show-points" id="score-win">0</p>
+        </div>
+        <div class="score-points">
+            <p>EMPATES</p>
+            <p class="show-points" id="score-tie">0</p>
+        </div>
+        <div class="score-points">
+            <p>COMPUTADOR</p>
+            <p class="show-points" id="score-loss">0</p>
+        </div>
+    </div>
+    
+    <p class="hidden" id="final-results"></p>
+
+    <footer>
+        <div>
+            <p><a href="https://github.com/leonardo-queiroz" target="_blank" rel="noopener noreferrer">LEONARDO QUEIROZ&nbsp</a> 2025</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
