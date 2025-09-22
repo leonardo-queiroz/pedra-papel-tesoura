@@ -167,16 +167,21 @@ header h1 {
 }
 
 .points-area {
-    width: 35%;
+    width: 50%;
     height: 10%;
+    padding: 0% 3%;
 }
 
 .points {
     position: relative;    
-    font-size: 0.9rem;   
+    font-size: 0.9rem;     
     opacity: 0;
     animation: moving 0.8s 1;
     animation-fill-mode: forwards;
+}
+
+#player-points {
+    text-align: end;
 }
 
 @keyframes moving {
